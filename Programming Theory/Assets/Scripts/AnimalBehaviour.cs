@@ -6,9 +6,8 @@ public class AnimalBehaviour : MonoBehaviour
 {
     void Jump()
     {
+        float speed = 1.0f;
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.up,ForceMode.Impulse);
+        rb.AddForce(Vector3.up * speed,ForceMode.Impulse);
     }
-
-
 }
